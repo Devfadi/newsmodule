@@ -1,0 +1,6 @@
+newsletter_subscriptions.default_form:
+  title: 'News Letters'
+  route_name: newsletter_subscriptions.list_controller_main
+  description: 'A description for the menu entry'
+  parent: system.admin_structure
+  weight: 99

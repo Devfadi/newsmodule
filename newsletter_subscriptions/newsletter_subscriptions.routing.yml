@@ -1,0 +1,18 @@
+newsletter_subscriptions.news_letter_form:
+  path: '/newsletter_subscriptions/form/news_letter'
+  defaults:
+    _form: '\Drupal\newsletter_subscriptions\Form\NewsLetterForm'
+    _title: 'NewsLetterForm'
+  requirements:
+    _access: 'TRUE'
+
+newsletter_subscriptions.list_controller_main:
+  path: '/admin/structure/newsletter'
+  defaults:
+    _controller: '\Drupal\newsletter_subscriptions\Controller\ListController::main'
+    _title: 'Items'
+  requirements:
+    _permission: 'access content'
+  parent: system.admin_structure:
+  options:
+    _admin_route: TRUE

@@ -1,0 +1,13 @@
+{
+    "name": "newsletter_subscriptions",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/newsletter_subscriptions",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/newsletter_subscriptions",
+        "source": "http://cgit.drupalcode.org/newsletter_subscriptions",
+    },
+}

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains newsletter_subscriptions.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function newsletter_subscriptions_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the newsletter_subscriptions module.
+    case 'help.page.newsletter_subscriptions':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function newsletter_subscriptions_theme() {
+  return [
+    'newsletter_subscriptions' => [
+      'render element' => 'children',
+    ],
+  ];
+}
